@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+    <title>Vánoční Video Projekt</title>
+</head>
+<body>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+
+    <div class="festive-header"></div>
+    <div class="container">
+        <h1>Vánoční Video Projekt</h1>
+        
+        <div class="section">
+            <div class="garland">
+            <h2>O projektu:</h2>
+            <p>Samotný projekt pak je představen jako procházka studenta z Prahy, který nemá peníze na vlak a proto se tyto vánoce nedostane k rodině. Projekt poukazuje na to, že Vánoční nálada nemusí být pokaždé jenom plná lásky a štěstí, ale že mezi námi jsou i tací co toto rodinné období mohou vnímat negativně.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Samotné video:</h2>
+            <div class="video-container">
+                <iframe  src="https://www.youtube.com/embed/2i9g_zkgdbM?si=pAOoWCelhnuUHU7x" title="YouTube video player"></iframe>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Použité zdroje:</h2>
+            <ul>
+                <li>Video: <a href="https://campuscvut-my.sharepoint.com/:f:/g/personal/shchemar_cvut_cz/Eokmej-qKCRGlfxmtz9uDN8BurlEJpSbRc621E2ZYm1zaA?e=SFcuok">https://campuscvut-my.sharepoint.com/:f:/g/personal/shchemar_cvut_cz/Eokmej-qKCRGlfxmtz9uDN8BurlEJpSbRc621E2ZYm1zaA?e=SFcuok</a></li>
+                <li>Audio: <a href="https://campuscvut-my.sharepoint.com/:f:/g/personal/shchemar_cvut_cz/Erh2hIjCYRpLt1gqP50Gl1sB-lvKpumJfOb9Zom7kVOWDg?e=f5v6ek">https://campuscvut-my.sharepoint.com/:f:/g/personal/shchemar_cvut_cz/Erh2hIjCYRpLt1gqP50Gl1sB-lvKpumJfOb9Zom7kVOWDg?e=f5v6ek</a></li>
+                <li>Image: <a href="https://campuscvut-my.sharepoint.com/:f:/g/personal/shchemar_cvut_cz/El4Ad5C4SGxClGHEMmVFSPkBGpEpx22zk6xWMc5RXc9JYw?e=6Lzb5a">https://campuscvut-my.sharepoint.com/:f:/g/personal/shchemar_cvut_cz/El4Ad5C4SGxClGHEMmVFSPkBGpEpx22zk6xWMc5RXc9JYw?e=6Lzb5a</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>O videu:</h2>
+            <p>Video bylo natočeno na známých místech v Praze. Přesněji při procházce jednoho z našich členů. Bylo natočeno na Samsung Galaxy S24 Ultra a následně přeformátovat v ffmpegu, protože kvůli problému s přenosem videa do kdenlive. Samotný hlas studenta jsme se rozhodli udělat za pomocí webové aplikace ElevenLabs.</p>
+        </div>
+
+        <div class="section">
+            <h2>Popis jednotlivých funkcí:</h2>
+            <div class="function-item">
+                <h3>Úprava v Ffmpeg:</h3>
+                <p>Ffmpeg úprava videa : -i input.mp4 -r 30 -vf scale=1920:1080 -vcodec libx264 -b:v 6000k output.mp4 </p>
+                <p>Ffmpeg finální video: -i input.mp4 -r 60 -vf scale=1920:1080 -vcodec libx264 -b:v 6000k output.mp4</p>
+            </div>
+                <div class="function-item">
+                <h3>Střih v kdenlive:</h3>
+                <p>Při úpravě videa v programu Kdenlive jsme použili následující techniky a efekty:</p>
+                <ol>
+                    <li><strong>Úprava jasu:</strong> Snížili jsme celkový jas videa pro dosažení požadované atmosféry.</li>
+                    <li><strong>Efekty green screenu:</strong> Využili jsme techniku green screenu pro přidání nebo změnu pozadí v některých scénách.</li>
+                    <li><strong>Transformace:</strong> Aplikovali jsme různé transformační efekty pro dynamičtější vizuální dojem.</li>
+                    <li><strong>Přechody:</strong> Použili jsme přechody na začátku (z tmy do světla) a na konci (ze světla do tmy) videa ("fade in" a "fade out").</li>
+                    <li><strong>Úprava rychlosti:</strong> Video jsme zrychlili pro dosažení požadovaného tempa a délky.</li>
+                </ol>
+                <p>Tyto techniky nám pomohly vytvořit poutavé a profesionálně vypadající video, které odpovídá zamýšlené atmosféře našeho projektu. Využili jsme celkem 7 stop.</p>
+                    <div class="image-container">
+                        <img src="img/videa.png" alt="Ukázka střihu v kdenlive" class="function-image">
+                    </div></div>
+               <div class="function-item">
+                <h3>Úprava audia v Audacity:</h3>
+                <p>Při zpracování zvukové stopy našeho projektu v programu Audacity jsme použili následující techniky a efekty:</p>
+                <ol>
+                    <li><strong>Úprava hlasitosti:</strong> Normalizovali jsme úrovně hlasitosti v celém projektu pro konzistentní poslech.</li>
+                    <li><strong>Odstranění šumu:</strong> Použili jsme techniky redukce šumu pro odstranění nežádoucích zvuků na pozadí.</li>
+                    <li><strong>Ekvalizace:</strong> Upravili jsme frekvence zvuku pro dosažení čistšího a vyváženějšího zvukového profilu.</li>
+                    <li><strong>Komprese:</strong> Aplikovali jsme kompresi pro zlepšení dynamického rozsahu a celkové srozumitelnosti.</li>
+                    <li><strong>Synchronizace s videem:</strong> Pečlivě jsme sladili zvukovou stopu s vizuální složkou pro perfektní timing.</li>
+                </ol>
+                <p>Tyto úpravy nám pomohly vytvořit profesionálně znějící zvukovou stopu, která perfektně doplňuje vizuální stránku našeho projektu a posiluje celkový dojem z videa. Využili jsme celkem 4 stopy pro komplexní vrstvení zvuku.</p>
+                <div class="image-container">
+                    <img src="img/zvuk1.png" alt="Ukázka úpravy audia v Audacity 1" class="function-image">
+                    <img src="img/zvuk2.png" alt="Ukázka úpravy audia v Audacity 2" class="function-image">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        function createLights() {
+            const garland = document.querySelector('.garland');
+            const rect = garland.getBoundingClientRect();
+            const lightCount = 30;
+            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00'];
+
+            for (let i = 0; i < lightCount; i++) {
+                const light = document.createElement('div');
+                light.className = 'light';
+                light.style.left = `${(i / lightCount) * 100}%`;
+                light.style.top = i % 2 === 0 ? '-6px' : '-12px';
+                light.style.backgroundColor = colors[i % colors.length];
+                light.style.animationDelay = `${(i / lightCount) * 0.5}s`;
+                garland.appendChild(light);
+            }
+        }
+
+        window.addEventListener('load', createLights);
+    </script>
+</body>
+</html>
